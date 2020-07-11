@@ -1,0 +1,390 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Login*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+
+}
+
+.containerr{
+  width: 100%;
+  height: auto;
+  position: absolute;
+
+}
+#home{
+  z-index: 1;
+}
+
+.menu ul{
+  display: inline-flex;
+
+  margin: 30px;
+}
+.menu ul li {
+  list-style: none;
+  margin:0 20px;
+  color: #b2b1b1;
+  cursor: pointer;
+}
+.menu ul li a{
+  margin:0 20px;
+  color: #b2b1b1;
+  cursor: pointer;
+  text-decoration: none;
+}
+.menu ul li a:hover{
+  color: #37D09D;
+}
+.logo img{
+  width: 80px;
+  height: 60px;
+  margin-top:-20px;
+  margin-right: 48px;
+}
+
+.active{
+  color: #19dafa !important;
+
+}
+.signUp-btn{
+    top:15px;
+  right: 80px;
+  position: absolute;
+  text-decoration: none;
+  color: #fff;
+  border:2px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(#42455a,#42455a),
+  radial-gradient(circle at top left,#fd00da,#19d7f8);
+  background-origin: border-box;
+  background-clip: content-box,border-box;
+}
+.signUp-btn span{
+  display: block;
+  padding:8px 22px;
+}
+
+.banner{
+  width: 100%;
+  height: auto;
+  top:29%;
+  left:0;
+  color: #72A2F5;
+
+
+}
+
+#land-row{
+  margin-left: 40px;
+}
+.app-text{
+margin-bottom: 20px;
+}
+
+
+.app-text h1{
+  font-size: 43px;
+  width: 800px;
+  position: relative;
+  margin-left: 40px;
+}
+.app-text p{
+  width: 800px;
+  font-size: 15px;
+  margin:30px 0 30px 40px;
+  line-height: 25px;
+  color:#919191;
+}
+.app-picture{
+  width: 50%;
+  float: right;
+  top: 50%;
+  z-index: -1;
+}
+.app-picture img{
+  width: 100%;
+  opacity: 0.6;
+  margin-top: -20px;
+  padding-left: 50px;
+}
+.quick-links{
+  left: 0;
+  top: 30%;
+  bottom: 20%;
+  position: absolute;
+  background: linear-gradient(to right,#db1bf6,#19d7f8);
+}
+.quick-links ul{
+  display: block;
+  margin:25px auto;
+  text-align: center;
+  background: linear-gradient(to right,#db1bf6,#19d7f8);
+
+}
+.quick-links ul li{
+  list-style: none;
+  margin: 0 50px ;
+  cursor: pointer;
+  background: linear-gradient(to right,#db1bf6,#19d7f8);
+}
+.quick-links ul li .fa{
+  font-size: 25px;
+  color:#fff;
+  background-color: #475447;
+}
+.quick-links ul li p{
+  margin-top: 15px;
+  font-size: 10px;
+  color: #fff;
+  background-color: #475447;
+}
+.social-icons{
+  right: 72px;
+  bottom: 35px;
+  position: absolute;
+}
+.social-icons ul li{
+  list-style: none;
+  margin-top: 15px;
+  text-align: center;
+}
+.social-icons ul li a {
+  color:#999;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+  display: block;
+
+}
+
+/*Login*/
+#register *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#register body{
+  font-family: 'Poppins', sans-serif;
+}
+#register .wave{
+  position: fixed;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#register .container{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 0 2rem;
+}
+#register .img img{
+  width: 500px;
+}
+
+#register .avatar{
+  width: 100px;
+}
+#register .img{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#register .login-container{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#register form{
+  width: 360px;
+}
+
+#register form h2{
+  font-size: 2.9rem;
+  text-transform: uppercase;
+  margin: 15px 0;
+  color: #333;
+}
+#register .input-div{
+  position: relative;
+  display: grid;
+  grid-template-columns: 7% 93%;
+  margin: 25px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+#register .input-div:after, .input-div:before{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #38d39f;
+  transition: .3s;
+}
+#register .input-div:after{
+  right: 50%;
+}
+#register .input-div:before{
+  left: 50%;
+}
+
+#register .one{
+  margin-top: 0;
+}
+#register .two{
+  margin-bottom: 4px;
+}
+
+#register .focus .i i{
+  color: #38d39f;
+}
+
+#register .input-div.focus div h5{
+  top: -5px;
+  font-size: 15px;
+}
+
+#register .i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#register .i i{
+  color: #d9d9d9;
+}
+#register .input-div>div{
+  position: relative;
+  height: 45px;
+}
+#register .input-div>div h5{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  transition: .3s;
+
+}
+#register .input-div.focus::after,.input-div.focus:before{
+  width: 50%;
+}
+
+#register .input{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  color: #555;
+
+}
+#register a{
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+  transition: .3s;
+}
+#register a:hover{
+  color: #38d39f;
+}
+
+#register .btn{
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right,#32be8f,#38d39f,#32be8f);
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  background-size: 200%;
+  transition: .5s;
+}
+#register .btn:hover{
+  background-position: right;
+}
+
+
+#register .row{
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#register #kaydol{
+
+  right: 220px;
+  position: absolute;
+  text-decoration: none;
+  color: #fff;
+  border:2px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(#42455a,#42455a),
+  radial-gradient(circle at top left,#fd00da,#19d7f8);
+  background-origin: border-box;
+  background-clip: content-box,border-box;
+}
+#register #kaydol span{
+ display: block;
+  margin: 5px 20px;
+}
